@@ -18,16 +18,14 @@ module.exports = {
       }
     ]
   },
-  transpilePackages: ['dayjs']
-  // webpack: (config, { dev, isServer }) => {
-  //   // Replace React with Preact only in client production build
-  //   if (!dev && !isServer) {
-  //     Object.assign(config.resolve.alias, {
-  //       react: 'preact/compat',
-  //       'react-dom/test-utils': 'preact/test-utils',
-  //       'react-dom': 'preact/compat'
-  //     })
-  //   }
-  //   return config
-  // }
+  transpilePackages: ['dayjs'],
+  webpack: (config, { isServer }) => {
+    // Add a rule to handle dayjs locale files
+    config.module.rules.push({
+      test: /dayjs[/\\]locale/,
+      loader: 'ignore-loader'
+    });
+
+    return config;
+  }
 }

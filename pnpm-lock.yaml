@@ -29,8 +29,8 @@ importers:
         specifier: ^2.3.2
         version: 2.3.2
       dayjs:
-        specifier: ^1.11.10
-        version: 1.11.10
+        specifier: ^1.11.13
+        version: 1.11.13
       feed:
         specifier: ^4.2.2
         version: 4.2.2
@@ -92,6 +92,9 @@ importers:
       eslint-config-next:
         specifier: ^15.3.5
         version: 15.3.5(eslint@8.53.0)(typescript@5.2.2)
+      ignore-loader:
+        specifier: ^0.1.2
+        version: 0.1.2
       next-sitemap:
         specifier: ^4.2.3
         version: 4.2.3(next@15.3.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
@@ -1120,8 +1123,8 @@ packages:
     resolution: {integrity: sha512-sAJVKx/FqrLYHAQeN7VpJrPhagZc9R4ImZIWYRFZaaohR3KzmuK88touwsSwSVT8Qcbd4zoDsnGfX4GFB4imyQ==}
     engines: {node: '>=0.11'}
 
-  dayjs@1.11.10:
-    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+  dayjs@1.11.13:
+    resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
 
   debug@3.1.0:
     resolution: {integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==}
@@ -1729,6 +1732,9 @@ packages:
 
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
+
+  ignore-loader@0.1.2:
+    resolution: {integrity: sha512-yOJQEKrNwoYqrWLS4DcnzM7SEQhRKis5mB+LdKKh4cPmGYlLPR0ozRzHV5jmEk2IxptqJNQA5Cc0gw8Fj12bXA==}
 
   ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
@@ -4330,7 +4336,7 @@ snapshots:
 
   date-fns@2.16.1: {}
 
-  dayjs@1.11.10: {}
+  dayjs@1.11.13: {}
 
   debug@3.1.0:
     dependencies:
@@ -5141,6 +5147,8 @@ snapshots:
 
   ieee754@1.2.1: {}
 
+  ignore-loader@0.1.2: {}
+
   ignore@5.2.4: {}
 
   ignore@7.0.5: {}
@@ -5527,7 +5535,7 @@ snapshots:
       d3: 7.8.5
       d3-sankey: 0.12.3
       dagre-d3-es: 7.0.10
-      dayjs: 1.11.10
+      dayjs: 1.11.13
       dompurify: 3.0.6
       elkjs: 0.8.2
       khroma: 2.1.0
