@@ -13,7 +13,7 @@ const BLOG = {
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
   since: 2021, // If leave this empty, current year will be used.
   postsPerPage: 7,
-  sortByDate: false,
+  sortByDate: true,
   showAbout: true,
   showArchive: true,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
@@ -40,11 +40,11 @@ const BLOG = {
     // support provider: gitalk, utterances, cusdis
     provider: '', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
-      repo: '', // The repository of store comments
-      owner: '',
-      admin: [],
-      clientID: '',
-      clientSecret: '',
+      repo: 'my-nextjs-blog', // The repository of store comments
+      owner: 'matwming',
+      admin: ['matwming'],
+      clientID: 'Ov23liv5YcP3aLtEAPL0',
+      clientSecret: process.env.GITTALK_CLIENT_SECRET,
       distractionFreeMode: false
     },
     utterancesConfig: {
