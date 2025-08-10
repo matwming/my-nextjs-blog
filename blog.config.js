@@ -38,8 +38,7 @@ const BLOG = {
   },
   comment: {
     // support provider: gitalk, utterances, cusdis
-    provider: '', // leave it empty if you don't need any comment plugin
-    gitalkConfig: {
+    littalkConfig: {
       repo: 'my-nextjs-blog', // The repository of store comments
       owner: 'matwming',
       admin: ['matwming'],

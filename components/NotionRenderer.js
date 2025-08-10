@@ -1,10 +1,11 @@
+'use client';
 import { createElement as h } from 'react'
 import dynamic from 'next/dynamic'
-import { NotionRenderer as Renderer } from 'react-notion-x'
 import { getTextContent } from 'notion-utils'
 import { FONTS_SANS, FONTS_SERIF } from '@/consts'
 import { useConfig } from '@/lib/config'
 import Toggle from '@/components/notion-blocks/Toggle'
+const ReactNotionRender = dynamic(()=> import('react-notion-x',{ssr: false}).then((x)=>x.NotionRenderer));
 
 // Lazy-load some heavy components & override the renderers of some block types
 const components = {
@@ -133,7 +134,7 @@ export default function NotionRenderer (props) {
         }
         `}
       </style>
-      <Renderer
+      <ReactNotionRender
         components={components}
         mapPageUrl={mapPageUrl}
         {...props}
