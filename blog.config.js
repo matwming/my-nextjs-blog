@@ -43,7 +43,7 @@ const BLOG = {
       owner: 'matwming',
       admin: ['matwming'],
       clientID: 'Ov23liv5YcP3aLtEAPL0',
-      clientSecret: process.env.GITTALK_CLIENT_SECRET,
+      clientSecret: process.env.LITTALK_CLIENT_SECRET,
       distractionFreeMode: false
     },
     utterancesConfig: {
